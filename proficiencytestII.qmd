@@ -15,18 +15,26 @@ print(mtcars$mpg[i])
 
 
 ```{r}
-count_above <- function(i, count){
-  count <- 3
-for(i in 1:length(iris$Sepal.Length[i])){
-  if(count > i){
+count_above <- function(x, c){
+  count <- 0
+for(i in 1:length(x)){
+  if(i > c){
     count <- count + 1
   }
 }
   return(count)
 }
+
+head(iris$Sepal.Length)
 ```
 
 ```{r}
-
+count_above(iris$Sepal.Length, 6)
 ```
+```{r}
+count_above(mtcars$disp, 150)
+
+mtcars$disp
+```
+
 
