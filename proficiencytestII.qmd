@@ -14,11 +14,13 @@ print(mtcars$mpg[i])
 ```
 
 
+## Task-2
 ```{r}
 count_above <- function(x, c){ # creates count_above as a function, sets x as the vector and c as the cutoff
   count <- 0 # sets the count to 0
+  
 for(i in 1:length(x)){ # for i is from 1 to the length of x
-  if(i > c){ # if 
+  if((1:length(x[i])) > c){ # if an index is greater than the cutoff
     count <- count + 1 #adds +1 to the counter
   }
 }
@@ -27,10 +29,24 @@ for(i in 1:length(x)){ # for i is from 1 to the length of x
 ```
 
 ```{r}
-count_above(iris$Sepal.Length, 6)
+count_aboveandequal <- function(x, c){ # creates count_above as a function, sets x as the vector and c as the cutoff
+  count <- 0 # sets the count to 0
+  
+for(i in 1:length(x)){ # for i is from 1 to the length of x
+  if(i >= c){ # if i is greater than or equal to c
+    count <- count + 1 #adds +1 to the counter
+  }
+}
+  return(count) #returns count
+}
 ```
+
 ```{r}
-count_above(mtcars$disp, 150)
+count_above(iris$Sepal.Length,6)
+```
+
+```{r}
+count_aboveandequal(mtcars$disp, 150)
 ```
 
 
