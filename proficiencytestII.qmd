@@ -1,7 +1,7 @@
 ---
 title: "proficiency-test-II"
 author: "Cameron Flores"
-format: html
+format: pdf
 editor: visual
 ---
 
@@ -48,5 +48,17 @@ count_above(iris$Sepal.Length,6)
 ```{r}
 count_aboveandequal(mtcars$disp, 150)
 ```
+
+## Task 3
+Masking functions is when you cover up a loaded in function that was installed, these laoded in functions usually override basic R studio functions.
+
+## Task 4
+```{r}
+iris$Sepal.Length[1]
+
+iris[1,1]
+```
+it returns the first value in the Sepal.Length column of iris
+
 
 
