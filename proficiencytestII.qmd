@@ -15,17 +15,15 @@ print(mtcars$mpg[i])
 
 
 ```{r}
-count_above <- function(x, c){
-  count <- 0
-for(i in 1:length(x)){
-  if(i > c){
-    count <- count + 1
+count_above <- function(x, c){ # creates count_above as a function, sets x as the vector and c as the cutoff
+  count <- 0 # sets the count to 0
+for(i in 1:length(x)){ # for i is from 1 to the length of x
+  if(i > c){ # if 
+    count <- count + 1 #adds +1 to the counter
   }
 }
-  return(count)
+  return(count) #returns count
 }
-
-head(iris$Sepal.Length)
 ```
 
 ```{r}
@@ -33,8 +31,6 @@ count_above(iris$Sepal.Length, 6)
 ```
 ```{r}
 count_above(mtcars$disp, 150)
-
-mtcars$disp
 ```
 
 
