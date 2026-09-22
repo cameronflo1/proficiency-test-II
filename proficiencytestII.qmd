@@ -4,3 +4,13 @@ author: "Cameron Flores"
 format: html
 editor: visual
 ---
+
+## Task-1
+
+```{r}
+for(i in 1:3){
+print(mtcars$mpg[i])
+}
+```
+
+
