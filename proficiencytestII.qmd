@@ -27,6 +27,7 @@ count_above <- function(x, c) {
 
   return(count)
 }
+yo
 ```
 
 ```{r}
