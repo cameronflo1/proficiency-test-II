@@ -16,15 +16,16 @@ print(mtcars$mpg[i])
 
 ## Task-2
 ```{r}
-count_above <- function(x, c){ # creates count_above as a function, sets x as the vector and c as the cutoff
-  count <- 0 # sets the count to 0
-  
-for(i in 1:length(x)){ # for i is from 1 to the length of x
-  if((1:length(x[i])) > c){ # if an index is greater than the cutoff
-    count <- count + 1 #adds +1 to the counter
+count_above <- function(x, c) {
+  count <- 0
+
+  for (i in 1:length(x)) {
+    if (x[i] > c) {
+      count <- count + 1
+    }
   }
-}
-  return(count) #returns count
+
+  return(count)
 }
 ```
 
